@@ -9,8 +9,8 @@ I plan to add the following services in order:
 
 Installation:
 
-There is no convenient installation option yet. You can download the project and build if you have the golang toolchain. The Totem directory is on your /Desktop folder by default.
-Totem/Tracking.yaml holds all the tracking profiles. Here is a default template for a tracking profile:
+If you are on macOS, you can download the alpha release. OR you can download the source code and build it yourself if you have the golang toolchain. The Totem directory is on your /Desktop folder by default.
+Make a Totem/Tracking.yaml to hold all of the tracking profiles. Here is a default template for a tracking profile:
 
 ```yaml
 - targetname: BobTheTarget
@@ -26,6 +26,9 @@ Set userid & siteid to -1 if you don't know them.
 Commands:
 
 `totem run` *Runs all active profiles*
+
 `totem run TargetName...`  *Runs all selected profiles, regardless of whether they are active*
+
 `totem print` *Prints out all profiles*
+
 `totem bio TargetName` *Prints out a profile's bio information*

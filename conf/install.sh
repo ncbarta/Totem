@@ -1,7 +1,14 @@
 #!/usr/bin/bash
 
-# Compile Totem
-# Ask the user where they'd like Totem
-# Ask the user if they want a LaunchItem (macOS only)
-# Put executable in zsh directory (or whatever the default is for the system)
-# (Opt) Put info.plist in LaunchAgents (macOS only)
+# Totem location by default is wherever the user dragged the /Totem folder, but the user can also specify a particular location.
+dir=$(pwd)
+echo $dir
+
+if [ $# -eq 1 ]
+    then dir="$1"
+fi
+
+export TOTEM_DIR=$dir
+
+# work in progress...
+
