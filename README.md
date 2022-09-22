@@ -26,6 +26,9 @@ Set userid & siteid to -1 if you don't know them.
 Commands:
 
 `totem run` *Runs all active profiles*
+
 `totem run TargetName...`  *Runs all selected profiles, regardless of whether they are active*
+
 `totem print` *Prints out all profiles*
+
 `totem bio TargetName` *Prints out a profile's bio information*
